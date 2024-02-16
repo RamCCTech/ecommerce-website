@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/auth.css">
+    <title>SignIn</title>
+</head>
+<body>
+    <ul id="nav">
+        <li style="float: left;">
+            <img src="../resources/logo.png" alt="logo">
+        </li>
+    </ul>
+    <div class="signin">
+        <div class="card">
+            <h1>Login</h1>
+            <form method="post" id="signInForm">
+                <input type="email" name="email" placeholder="Email" id="signInEmail" />
+                <input type="password" name="password" placeholder="Password" id="signInPassword" />
+                <button>Login</button>
+            </form>
+            <span>Don't have an account? <a href="SignUp.html">Sign Up</a></span>
+            <br><span><a href="ForgotPassword.html">Forgot Password?</a></span>
+        </div>
+    </div>
+    <script src="../scripts/signinScript.js"></script>
+</body>
+</html>

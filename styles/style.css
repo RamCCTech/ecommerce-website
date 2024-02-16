@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#products {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.product {
+    border: 1px solid blue;
+    background-color: dodgerblue;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 1rem;
+    height: 20rem;
+    margin: 5vh 2.5vw 0 2.5vw;
+}
+
+.product img {
+    width: 100%;
+    height: 70%;
+    max-width: 100%;
+}
+
+.product .prodDisc {
+    max-width: 100%;
+    height: 25%; 
+    margin: auto;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.product .prodDisc .prodName {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 0; 
+}
+
+.product .prodDisc p {
+    text-align: center;
+    margin: 0;
+}
+
+.product .prodDisc .buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.product .prodDisc .cartButton {
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+    border-radius: 10px;
+    flex: 1;
+    background-color: white;
+    color: dodgerblue;
+    border: 2px solid white;
+}
+
+.product .prodDisc .deleteButton {
+    flex-shrink: 0;
+    color: red;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.product .prodDisc .buttons .cartButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 200px) {
+    #products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    #products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1400px) {
+    #products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1700px) {
+    #products {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+#aboutUs {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 2px solid #333; 
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#aboutUs p {
+    margin-bottom: 20px;
+}
+
